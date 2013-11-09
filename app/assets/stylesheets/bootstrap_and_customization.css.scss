@@ -1,19 +1,53 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-
-$body-bg:                                                   white;
-$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-height:                                        45px;
-$navbar-default-bg:                          white;
-$navbar-default-brand-color:      #c0392b;
-$brand-primary:                                    #c0392b;
-$jumbotron-bg:                                         #ecf0f1;
-
+$body-bg: white;
+$navbar-inverse-bg: #27ae60;
+$navbar-inverse-link-color: white;
+$brand-primary: green;
+$jumbotron-bg: #ecf0f1;
 @import 'bootstrap';
 
 .center {
      text-align: center;
 }
 
-.navbar-brand {
-     font-weight: bold;
+.containerleft{
+          width: 10px ;
+          }
+
+/* CSS for fixed-fluid layout */
+
+.fixed {
+    width: 150px;  /* the fixed width required */
+    float: left;
+}
+
+.fixed + div {
+     margin-left: 180px;  /* must match the fixed width in the .fixed class */
+     overflow: auto;
+}
+
+
+/* CSS to ensure sidebar and content are same height (optional) */
+
+html, body {
+    height: 100%;
+}
+
+.fill { 
+    min-height: 100%;
+    position: relative;
+}
+
+.filler:after{
+    background-color:inherit;
+    bottom: 0;
+    content: "";
+    height: auto;
+    min-height: 100%;
+    left: 0;
+    margin:inherit;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    z-index: -1;  
 }
