@@ -9,11 +9,13 @@ $jumbotron-bg: #ecf0f1;
      text-align: center;
 }
 
-.containerleft{
-          width: 10px ;
-          }
+.footer {
+   position:absolute;
+   bottom: absolute;
+}
 
 /* CSS for fixed-fluid layout */
+
 
 .fixed {
     width: 150px;  /* the fixed width required */
@@ -50,4 +52,100 @@ html, body {
     top: 0;
     width: inherit;
     z-index: -1;  
+}
+
+/* For use with Jquery and Masonry */
+//.masonry {
+//  background: #EEE;
+//  max-width: 640px;
+//}
+
+//.masonry .item {
+  //width:  60px;
+  //height: 60px;
+//  float: 180px;
+//  background: #D26;
+//  border: 2px solid #333;
+//  border-color: hsla(0, 0%, 0%, 0.5);
+//  border-radius: 5px;
+//}
+
+//.item.w2 { width:  120px; }
+//.item.w3 { width:  180px; }
+//.item.w4 { width:  240px; }
+
+//.item.h2 { height: 100px; }
+//.item.h3 { height: 130px; }
+//.item.h4 { height: 180px; }
+
+.box {
+    margin: 5px;
+    padding: 5px;
+    font-size: 11px;
+    line-height: 1.4em;
+    float: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #444;
+    width: 214px;
+
+}
+
+.box img {
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.description {
+    margin: 10px 0 5px;
+}
+
+
+/*Navigation*/
+.sidebar-nav {
+  position: absolute;
+  width: 50px;
+  float: left;
+  margin: 0em;
+  padding-top: 1.5em;
+}
+@media (min-width: 1200px) {
+  .sidebar-nav {
+    width: 200px;
+  }
+  .sidebar-nav li a span {
+    display: inline !important;
+  }
+}
+.sidebar-nav .nav-list {
+  padding: 0px;
+}
+.sidebar-nav .nav-list li {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  margin-bottom: -1px;
+}
+.sidebar-nav .nav-list li.active {
+  background: #f3f3f5;
+  border-right: 0px;
+  border-top: 1px solid #cfcfd6;
+  border-bottom: 1px solid #cfcfd6;
+}
+.sidebar-nav .nav-list li a,
+.sidebar-nav .nav-list li a:hover {
+  color: #585868;
+  text-shadow: 1px 1px 0px #fff;
+  padding: .5em 2em;
+  border: 0px;
+  margin: 0px 1px;
+  background: none;
+}
+.sidebar-nav .nav-list li.active a {
+  border: 0px;
+}
+.sidebar-nav .nav-list li:hover {
+  background: #e8e8eb;
 }
